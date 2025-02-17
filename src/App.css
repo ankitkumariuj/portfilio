@@ -474,7 +474,9 @@ h3 {
   .container{
     flex-direction: column;
   }
-
+. project-card{
+    margin-left: 94px;
+}
   .image img {
     width: 333px;
     border: 2px solid black;

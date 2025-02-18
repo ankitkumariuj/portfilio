@@ -24,14 +24,14 @@ function App() {
 >
         <div className="text">
           <h3>About Me</h3>
-          <div className="line"></div>
-          <p>
+          <div className="line" id="line"></div>
+          <p className="about">
             Hi, I'm Ankit Kumar, a passionate frontend developer with expertise
             in React.js, JavaScript, HTML, and CSS. I specialize in building
             dynamic, responsive, and user-friendly web applications. Currently,
             I’m in diploma.
           </p>
-          <p>
+          <p className="about">
             I enjoy learning new technologies, working with APIs, and building
             user-friendly web applications. Currently, I’m looking for frontend
             development internships to gain hands-on experience and enhance my

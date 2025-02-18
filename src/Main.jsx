@@ -40,18 +40,19 @@ function ProjectCard({ img, title, desc, github ,demo}) {
         <img src={img} alt={title} />
       </div>
       <div className="info">
-        <p>{title}</p>
-        <p>{desc}</p>
+        <p className='des'>{title}</p>
+        <p className='des'>{desc}</p>
         <div className="project-link">
         <a href={demo} target="_blank" rel="noopener noreferrer">
-        <i className='fas fa-external-link-alt'>  Live Demo</i></a>
+        <i className='fas fa-external-link-alt'> <p> Live Demo</p></i></a>
         <a href={github} target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github">  GitHub</i>
+          <i class="fa-brands fa-github"> <p> GitHub</p></i>
         </a>
         </div>
       </div>
     </motion.div>
     </section>
+    
   );
 }
 
@@ -87,6 +88,7 @@ function App() {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <h3>Projects</h3>
+        <div className="linesess"></div>
 
         {/* Show projects */}
         {projects.slice(0, isMobile ? visibleProjects : projects.length).map((project, index) => (

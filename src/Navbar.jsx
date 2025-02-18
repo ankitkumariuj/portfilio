@@ -20,29 +20,128 @@ function App() {
   useEffect(() => {
     if (theme === 'dark') {
       document.body.style.backgroundColor = 'black';
-      document.body.style.color = 'navajowhite';
+      document.body.style.color = 'white';
 
+       document.getElementById('line').style.backgroundColor="white";
+
+       document.getElementById('hbtn').style.color= 'white';
+       document.getElementById('hbtns').style.color= 'white';
+     
+      
+       const button= document.getElementById('hbtn');
+       button.style.borderColor="white";
+           button.onmouseenter= function(){
+             button.style.backgroundColor="white";
+             button.style.color="black";
+             button.style.border="2px solid blue";
+       
+           }
+       
+           button.onmouseleave = function(){
+             button.style.backgroundColor="black";
+             button.style.color="white";
+             button.style.border="2px solid white";
+       
+           }
+
+           const buttons= document.getElementById('hbtns');
+buttons.style.borderColor="white";
+    buttons.onmouseenter= function(){
+      buttons.style.backgroundColor="white";
+      buttons.style.color="black";
+      buttons.style.border="2px solid blue";
+
+    }
+
+    buttons.onmouseleave = function(){
+      buttons.style.backgroundColor="black";
+      buttons.style.color="white";
+      buttons.style.border="2px solid white";
+
+    }
+
+    
+      document.getElementById('data').style.background="black";
+      document.getElementById('data').style.border="3px solid white";
+      document.getElementById('data').style.color="white";
+      const dataElement = document.getElementById('data');
+
+dataElement.onmouseover = function() {
+  dataElement.style.background = " linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44)"; 
+  dataElement.style.border="3px solid blue";
+};
+
+dataElement.onmouseout = function() {
+  dataElement.style.background = "black"; 
+  dataElement.style.border="3px solid white";
+};
+
+
+document.getElementById('datas').style.background="black";
+document.getElementById('datas').style.border="3px solid white";
+document.getElementById('datas').style.color="white";
+const dataElements = document.getElementById('datas');
+
+dataElements.onmouseover = function() {
+dataElements.style.background = " linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44)"; 
+dataElements.style.border="3px solid blue";
+};
+
+dataElements.onmouseout = function() {
+dataElements.style.background = "black"; 
+dataElements.style.border="3px solid white";
+};
+
+
+document.getElementById('datase').style.background="black";
+document.getElementById('datase').style.border="3px solid white";
+document.getElementById('datase').style.color="white";
+const dataElementse = document.getElementById('datase');
+
+dataElementse.onmouseover = function() {
+dataElementse.style.background = " linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44)"; 
+dataElementse.style.border="3px solid blue";
+};
+
+dataElementse.onmouseout = function() {
+dataElementse.style.background = "black"; 
+dataElementse.style.border="3px solid white";
+};
 
       
-      document.getElementById('hbtn').style.border= '3px solid navajowhite';
-
-      document.getElementById('hbtns').style.color="white";
-    
-      document.getElementById('hbtns').style.border= '3px solid navajowhite';
-      // Mobile-specific styling
+  
       document.documentElement.style.setProperty('--mobile-bg', '#222');
       document.documentElement.style.setProperty('--mobile-text', 'navajowhite');
 
-    } else {
+    } 
+    
+    else {
+
+      
+
       document.body.style.backgroundColor = 'white';
       document.body.style.color = 'black';
 
-      document.getElementById('hbtn').style.color="navajowhite";
-      document.getElementById('hbtn').style.border= '3px solid black';
+      
 
-      document.getElementById('hbtns').style.color="navajowhite";
-      document.getElementById('hbtns').style.border= '3px solid black';
+      document.getElementById('data').style.background="white";
      
+      document.getElementById('data').style.background="#f3ecec";
+     
+      document.getElementById('data').style.color="black";
+      const dataElement = document.getElementById('data');
+
+dataElement.onmouseover = function() {
+  dataElement.style.background = " linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44)"; 
+  dataElement.style.border="2px solid blue";
+};
+
+dataElement.onmouseout = function() {
+  dataElement.style.background = "#f3ecec"; 
+  dataElement.style.border="2px solid white";
+};
+
+
       // Reset for mobile
       document.documentElement.style.setProperty('--mobile-bg', 'white');
       document.documentElement.style.setProperty('--mobile-text', 'black');

@@ -221,7 +221,7 @@ color: white;
     width: 234px;
     background-color: white;
     margin-top: 121px;
-    margin-left: 94px;
+    margin-left: 70px;
     border-radius: 29px;
     margin-bottom: 15px;
 }
@@ -233,11 +233,21 @@ color: white;
   margin-left: 34px;
 }
 
+.about{
+  font-size: 21px;
+  font-weight: 500;
+}
+
 .info{
   text-align: center;
   margin-bottom: 70px;
   margin-top: 15px;
 }
+
+.des{
+  color: #050304;
+}
+
 .info button{
   height: 45px;
   width: 98px;
@@ -252,12 +262,17 @@ color: white;
   background-color: black;
   color: white;
 }
-
+ .project-link p{
+  font-family: monospace;
+  margin-left: 13px;
+  font-weight: 900;
+  transform: translate3d(41px, -15px, 16px);
+}
 
 .line{
   height: 5px;
   width: 167px;
-  background: black;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   margin-top: -58px;
   margin-bottom: 66px;
 }
@@ -367,8 +382,15 @@ h3 {
 .lines {
   width: 100px;
   height: 4px;
-  background: black;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   margin: 10px auto;
+}
+.linesess {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  transform: translate3d(-77px, 60px, 10px);
+  margin: 0px -69px;
 }
 
 .skills-grid {
@@ -401,8 +423,10 @@ h3 {
 }
 
 .project-link{
-  display: flex;
-  justify-content: space-between;
+  display: flex
+  ;
+      justify-content: space-evenly;
+      margin-left: -81px;
 }
 .social-media a {
  
@@ -469,7 +493,9 @@ h3 {
   opacity: 0.7;
 }
 
-
+/*.images{
+  margin-right: -107px;
+}*/
 @media screen and  (max-width: 901px) {
   .container{
     flex-direction: column;
@@ -496,6 +522,7 @@ h3 {
     height: fit-content;
     object-fit: cover;
     padding-top: -13px;
+    margin-bottom: 45px;
   }
   
 
@@ -588,6 +615,9 @@ hr{
       justify-content: center;
 }
 
+.load-more{
+  margin-left: 114px;
+}
 @media (max-width: 768px) {
   .mobile-menu {
     background-color: var(--mobile-bg);
@@ -614,10 +644,6 @@ hr{
     color: var(--mobile-text);
     cursor: pointer;
   }
-}
-
-
-@media (max-width: 768px) {
   .nav-links {
     display: none;
   }
@@ -627,4 +653,7 @@ hr{
     
   }
 }
+
+
+
 

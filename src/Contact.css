@@ -17,11 +17,66 @@
     color: black;
     margin-bottom: 15px;
   }
+  .right .data{
+    background-color: #f3ecec;
+   margin-left: 34px;
+   margin-top: 23px;
+    text-align: center;
+    position: relative;
+    /* background: var(--card-bg); */
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.4s;
+    overflow: hidden;
+  }
+
+  .right .data:hover{
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    border: 2px solid blue;
+  }
+
+  .contact-h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 45px;
+    font-weight: 900;
+    margin-bottom: -26px;
+  }
+
+  .lineses{
+    height: 5px;
+    width: 167px;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    margin-top: 31px;
+    display: flex
+;
+    /* margin-left: 121px; */
+    margin-bottom: 66px;
+    justify-self: center;
+  }
+
+  .container-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 15px;
+    padding: 20px;
   
+  }
+  .data i {
+    font-size: 20px;
+    color: #333;
+  }
   /* Form Styling */
   .contact-form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
   }
   
@@ -43,11 +98,11 @@
   }
   
   textarea {
-    width: 100%;
+    width: 102%;
     padding: 12px;
     border: none;
     border-radius: 8px;
-    background: black;
+    background:black;
     color: white;
     font-size: 16px;
     height: 120px;
@@ -68,9 +123,23 @@
     background: gray;
   }
 
+  .contact{
+    display: flex
+    ;
+        flex-direction: column;
+  }
+
   @media screen and (max-width: 901px) {
     .contact-container{
         margin-top: 130px;
+    }
+    .right {
+      grid-template-columns: 1fr; 
+      margin-left: -34px;
+    }
+    .contact-h2{
+      margin-top: 134px;
+        margin-bottom: -32px;
     }
   }
   
